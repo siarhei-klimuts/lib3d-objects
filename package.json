@@ -26,6 +26,9 @@
     "url": "https://github.com/Galiaf47/lib3d-objects/issues"
   },
   "homepage": "https://github.com/Galiaf47/lib3d-objects#readme",
+  "peerDependencies": {
+    "lib3d": "0.0.2"
+  },
   "devDependencies": {
     "file-loader": "^0.8.5",
     "json-loader": "^0.5.4",
