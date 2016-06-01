@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lib3d-objects example</title>
+    <script src="node_modules/lib3d/node_modules/three/three.min.js"></script>
+    <script src="node_modules/lib3d/dist/lib3d.js"></script>
+    <script src="lib3d-objects.js"></script>
+</head>
+<body>
+    <style type="text/css">
+        .menu {
+            float: right;
+            list-style-type: none;
+        }
+    </style>
+    <canvas id="LIBRARY"
+        onmousedown="lib3d.onMouseDown(event)"
+        onmouseup="lib3d.onMouseUp(event)"
+        onmousemove="lib3d.onMouseMove(event)"></canvas>
+
+    <ul class="menu" onmouseup="lib3d.navigation.goStop()" onmouseout="lib3d.navigation.goStop()">
+        <li><button onmousedown="lib3d.navigation.goLeft()">left</button></li>
+        <li><button onmousedown="lib3d.navigation.goRight()">right</button></li>
+        <li><button onmousedown="lib3d.navigation.goForward()">forward</button></li>
+        <li><button onmousedown="lib3d.navigation.goBackward()">backward</button></li>
+        <li><button onmousedown="lib3d.navigation.goUp()">up</button></li>
+        <li><button onmousedown="lib3d.navigation.goDown()">down</button></li>
+        <li><button onmousedown="preview()">Preview</button></li>
+        <li><button onmousedown="lib3d.preview.rotate(10);">Preview rotate</button></li>
+    </ul>
+
+    <script type="text/javascript">
+        lib3d.setObjectsRoot('/src');
+        lib3dObjects.library_0001.register();
+        lib3dObjects.library_0002.register();
+        lib3dObjects.library_0003.register();
+        lib3dObjects.bookshelf_0001.register();
+        lib3dObjects.book_0001.register();
+        lib3dObjects.book_0002.register();
+        lib3dObjects.book_0003.register();
+
+        lib3d.init(document.getElementById("LIBRARY"), 512, 512);
+        lib3d.addLoop(lib3d.navigation.update);
+
+        var library = lib3d.loadLibrary({
+            model: "library_0003",
+            sections: [
+                {
+                    id: 9,
+                    pos_x: -1,
+                    pos_y: 0,
+                    pos_z: -3.5,
+                    model: "bookshelf_0001",
+                    books: [
+                        {
+                            "id": 91,
+                            "pos_x": -0.268246169007469,
+                            "pos_y": -0.069276,
+                            "pos_z": -0.046377028631726,
+                            "shelfId": 4,
+                            "model": "book_0001",
+                            "sectionId": 9,
+                            "userId": 1,
+                            "cover": {
+                                "id": 86,
+                                "url": "http://res.cloudinary.com/galiaf/image/upload/v1429344169/vb/books/covers/r1jwbbfqqtu1jf0vtxj5.jpg"
+                            }
+                        },
+                        {
+                            "id": 92,
+                            "pos_x": -0.1,
+                            "pos_y": -0.069276,
+                            "pos_z": -0.046377028631726,
+                            "shelfId": 4,
+                            "model": "book_0003",
+                            "sectionId": 9,
+                            "userId": 1
+                        }
+                    ]
+                },
+                {
+                    id: 10,
+                    pos_x: 0.6,
+                    pos_y: 0,
+                    pos_z: -3.5
+                }
+            ]
+        });
+
+        lib3d.setLibrary(library);
+
+        function preview() {
+            if (!lib3d.preview.isActive()) {
+                var obj = lib3d.selector.getSelectedObject();
+                lib3d.preview.enable(obj);
+            } else {
+                lib3d.preview.disable();
+            }
+        }
+    </script>
+</body>
+</html>

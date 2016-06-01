@@ -23,15 +23,16 @@ var config = {
     plugins: [],
     resolve: {
         root: path.join(__dirname, 'src')
+    },
+    externals: {
+        'three': {
+            root: 'THREE',
+            commonjs2: "three",
+            commonjs: "three",
+            amd: "three"
+        },
+        'lib3d': 'lib3d'
     }
 };
-
-process.env.NODE_ENV = 'production';
-if (process.env.NODE_ENV === 'production') {
-    config.plugins.push(new webpack.optimize.UglifyJsPlugin({minimize: true}));
-    config.devtool = 'source-map';
-} else {
-    config.devtool = 'eval';
-}
 
 module.exports = config;

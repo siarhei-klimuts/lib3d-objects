@@ -4,7 +4,9 @@
   "description": "3D objects for lib3d",
   "main": "./dist/lib3d-objects.js",
   "scripts": {
-    "build": "webpack --progress --colors"
+    "build": "webpack --progress --colors",
+    "build-min": "webpack --config webpack.config.min.js",
+    "dev": "webpack-dev-server --config webpack.config.dev.js"
   },
   "repository": {
     "type": "git",
@@ -26,12 +28,13 @@
     "url": "https://github.com/Galiaf47/lib3d-objects/issues"
   },
   "homepage": "https://github.com/Galiaf47/lib3d-objects#readme",
-  "peerDependencies": {
-    "lib3d": "0.0.2"
+  "dependencies": {
+    "lib3d": "0.0.5"
   },
   "devDependencies": {
     "file-loader": "^0.8.5",
     "json-loader": "^0.5.4",
-    "webpack": "^1.12.14"
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
   }
 }
