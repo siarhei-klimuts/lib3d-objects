@@ -26,6 +26,9 @@ var textures = {
         map: 'floor',
         bumpMap: 'floorBumpMap',
         bumpScale: 0.001
+    },
+    lamp: {
+        emissive: new THREE.Color(0xFFFFFF)
     }
 };
 
