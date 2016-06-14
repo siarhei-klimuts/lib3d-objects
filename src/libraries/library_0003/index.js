@@ -5,6 +5,7 @@ var model = require('./model.json');
 var wall = require('./img/wallpaper.jpg');
 var floor = require('./img/floor.jpg');
 var floorBumpMap = require('./img/floor_bump_map.png');
+var grass = require('./img/grass.jpg');
 var img = require('./img/wallpaper.jpg');
 
 var params = {
@@ -14,6 +15,7 @@ var params = {
         wall: wall,
         floor: floor,
         floorBumpMap: floorBumpMap,
+        grass: grass,
         img: img
     }
 };
@@ -26,6 +28,9 @@ var textures = {
         map: 'floor',
         bumpMap: 'floorBumpMap',
         bumpScale: 0.001
+    },
+    grass: {
+        map: 'grass'
     },
     lamp: {
         emissive: new THREE.Color(0xFFFFFF)
