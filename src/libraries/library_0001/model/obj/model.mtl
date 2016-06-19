@@ -1,0 +1,57 @@
+# Blender MTL File: 'library_0001.blend'
+# Material Count: 5
+
+newmtl floor
+Ns 56.862745
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump -bm 0.100000 /mnt/data/projects/lib3d-objects/src/libraries/library_0001/img/floor.jpg
+map_Kd  /mnt/data/projects/lib3d-objects/src/libraries/library_0001/img/floor.jpg
+
+newmtl lamp
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.400000 0.400000 0.400000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl roof
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd  /mnt/data/projects/lib3d-objects/src/libraries/library_0001/img/roof.jpg
+
+newmtl wall
+Ns 37.254902
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd  /mnt/data/projects/lib3d-objects/src/libraries/library_0001/img/wall.jpg
+
+newmtl wood
+Ns 56.862745
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd  /mnt/data/projects/lib3d-objects/src/libraries/library_0001/img/wood.jpg

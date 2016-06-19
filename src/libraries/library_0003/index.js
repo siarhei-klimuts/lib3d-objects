@@ -1,6 +1,6 @@
 var lib3d = require('lib3d');
 
-var model = require('./model.json');
+var model = require('./model/model.json');
 
 var wall = require('./img/wallpaper.jpg');
 var floor = require('./img/floor.jpg');
@@ -43,8 +43,13 @@ var lights = [
 ];
 lights[1].position.set(0, 2.25, 0);
 
+var boundingBox = {
+    center: new THREE.Vector3(-0.06, 1.25, 0.06),
+    radius: new THREE.Vector3(2.4, 1.25, 2.4)
+};
+
 function register() {
-    var libraryData = new lib3d.LibraryData(params, textures, lights);
+    var libraryData = new lib3d.LibraryData(params, textures, lights, boundingBox);
     lib3d.registerLibrary(libraryData);
 }
 

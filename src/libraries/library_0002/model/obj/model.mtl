@@ -1,22 +1,22 @@
-# Blender MTL File: 'library_0003.blend'
+# Blender MTL File: 'model.blend'
 # Material Count: 6
 
 newmtl floor
-Ns 96.078431
+Ns 17.647059
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
-Ks 0.073874 0.073874 0.073874
+Ks 0.200000 0.200000 0.200000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd  /home/galiaf/Downloads/TexturesCom_WallpaperForties0033_S.jpg
+map_Kd  /mnt/data/projects/lib3d-objects/src/libraries/library_0002/img/floor.jpg
 
 newmtl glass
 Ns 96.078431
 Ka 1.000000 1.000000 1.000000
-Kd 0.401978 1.000000 1.000000
-Ks 0.500000 0.500000 0.500000
+Kd 0.640000 0.640000 0.640000
+Ks 1.000000 1.000000 1.000000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 0.200000
@@ -25,42 +25,42 @@ illum 2
 newmtl grass
 Ns 96.078431
 Ka 1.000000 1.000000 1.000000
-Kd 0.800000 0.800000 0.800000
-Ks 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
-illum 1
+illum 2
 map_Kd  /mnt/data/projects/lib3d-objects/src/libraries/library_0003/img/grass.jpg
 
-newmtl lamp
-Ns 96.078431
+newmtl roof
+Ns 0.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
-Ke 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
 
 newmtl wall
-Ns 96.078431
+Ns 56.862745
 Ka 1.000000 1.000000 1.000000
 Kd 0.640000 0.640000 0.640000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 1.000000
-illum 1
-
-newmtl wallpaper
-Ns 96.078431
-Ka 1.000000 1.000000 1.000000
-Kd 0.800000 0.800000 0.800000
-Ks 0.036036 0.036036 0.036036
+Ks 0.046603 0.046603 0.046603
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Bump -bm 0.050000 /mnt/data/projects/lib3d-objects/src/libraries/library_0003/4268-bump.jpg
-map_Kd  /home/galiaf/Downloads/TexturesCom_WallpaperForties0033_S.jpg
+map_Kd  /mnt/data/projects/lib3d-objects/src/libraries/library_0002/img/wallpaper.jpg
+
+newmtl wood
+Ns 56.862745
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd  /mnt/data/projects/lib3d-objects/src/libraries/library_0002/img/wood.jpg
