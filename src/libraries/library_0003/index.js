@@ -1,4 +1,5 @@
 var lib3d = require('lib3d');
+var THREE = require('three');
 
 var model = require('./model/model.json');
 
