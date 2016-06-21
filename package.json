@@ -29,9 +29,9 @@
     "url": "https://github.com/Galiaf47/lib3d-objects/issues"
   },
   "homepage": "https://github.com/Galiaf47/lib3d-objects#readme",
-  "dependencies": {
-    "lib3d": "0.1.0",
-    "three": "*"
+  "peerDependencies": {
+    "lib3d": "^0.1.0",
+    "three": "~0.75.0"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.9",
