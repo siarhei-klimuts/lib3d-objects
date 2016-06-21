@@ -30,7 +30,8 @@
   },
   "homepage": "https://github.com/Galiaf47/lib3d-objects#readme",
   "dependencies": {
-    "lib3d": "0.1.0"
+    "lib3d": "0.1.0",
+    "three": "*"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.9",
