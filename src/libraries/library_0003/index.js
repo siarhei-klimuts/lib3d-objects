@@ -7,7 +7,7 @@ var wall = require('./img/wallpaper.jpg');
 var floor = require('./img/floor.jpg');
 var floorBumpMap = require('./img/floor_bump_map.png');
 var grass = require('./img/grass.jpg');
-var img = require('./img/wallpaper.jpg');
+var img = require('./img/img.jpg');
 
 var params = {
     name: 'library_0003',
